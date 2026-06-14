@@ -12,7 +12,7 @@ async function callAI(prompt) {
       'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
     },
     body: JSON.stringify({
-      model: 'mistralai/mistral-7b-instruct:free',
+      model: 'meta-llama/llama-3-8b-instruct:free',
       messages: [{ role: 'user', content: prompt }],
       max_tokens: 1024,
     }),
